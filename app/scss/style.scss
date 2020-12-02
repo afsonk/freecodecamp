@@ -9,7 +9,53 @@ html{
 	padding: 0;
 	margin: 0;
 }
-.box{
-	display: flex;
-	transition: all .3s;
+body{
+	font-family: sans-serif;
+	color: #333;
+}
+.main{
+	background-color: #EEEEEE;
+	margin: 30px 10px;
+	text-align: center;
+	&__title{
+		padding: 20px 0 10px;
+	}
+	&__img{
+		display: inline-block;
+		background-color: #fff;
+		padding: 0 250px;
+		#img-caption{
+			padding: 20px 0;
+			font-size: 14px;
+		}
+	}
+	&__info{
+		&-title{
+			margin: 40px 0;
+			font-size: 24px;
+			font-weight: 700;
+		}
+		&-list,blockquote{
+			text-align: left;
+			max-width: 600px;
+			margin: 0 auto;
+			margin-bottom: 40px;
+			li{
+				line-height: 20px;
+				font-size: 16px;
+				&+li{
+					margin-top: 20px;
+				}
+			}
+		}
+		&-blockquote{
+			font-style: italic;
+			.blockquote__paragraph{
+				margin-bottom: 20px;
+			}
+		}
+		&-bottom{
+			padding-bottom: 40px;
+		}
+	}
 }
