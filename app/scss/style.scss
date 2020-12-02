@@ -14,6 +14,7 @@ body{
 	color: #333;
 }
 .main{
+	padding: 15px;
 	background-color: #EEEEEE;
 	margin: 30px 10px;
 	text-align: center;
@@ -21,9 +22,13 @@ body{
 		padding: 20px 0 10px;
 	}
 	&__img{
-		display: inline-block;
+		padding: 10px;
 		background-color: #fff;
-		padding: 0 250px;
+		margin: 0 auto;
+		img{
+			max-width: 100%;
+		}
+		
 		#img-caption{
 			padding: 20px 0;
 			font-size: 14px;
@@ -36,6 +41,7 @@ body{
 			font-weight: 700;
 		}
 		&-list,blockquote{
+			padding: 0 15px;
 			text-align: left;
 			max-width: 600px;
 			margin: 0 auto;
